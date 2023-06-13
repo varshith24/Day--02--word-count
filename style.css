@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+}
+.main{
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+        flex-wrap: wrap;
+        overflow: hidden;
+    /* transform: translate(-50, -50); */
+    background: linear-gradient(#141e30, #243b55);
+}
+#head{
+    color: #fff;
+    background: linear-gradient(#141e30, #243b55);
+    padding: 0.4em;
+    border-radius: 0.4em;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border: 2px solid;
+}
+.input{
+    /* position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 450px;
+        display: flex;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, .5);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+        border-radius: 10px; */
+    background-color: #141e30;
+    height: 60%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.7em;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+
+}
+.input textarea{
+    height: 10px;
+    display: inline-block;
+    width: 200px;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    scrollbar-width: none;
+    max-height: 10em;
+}
+.input button{
+    border-radius: 0.4em;
+    position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #141e30;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 40px;
+        letter-spacing: 2px
+}
+#mybutton{
+    display: inline-block;
+    margin-bottom: -10px
+}
+.input textarea::-webkit-scrollbar{
+    display: none;
+}
+#msg {
+    color: #fff;
+}
+.input button:hover{
+    background: #03e9f4;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #03e9f4,
+            0 0 25px #03e9f4,
+            0 0 50px #03e9f4,
+            0 0 100px #03e9f4;
+}
+#msg{
+    text-align: center;
+    text-transform: capitalize;
+}
+#msg span {
+    position: absolute;
+    display: block;
+}
+#done{
+    color: #fff;
+}
+@media only screen and (max-width: 800px) {
+    .input{
+        width: 80%;
+        height: 80%;
+    }
+}
