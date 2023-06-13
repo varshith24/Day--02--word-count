@@ -113,3 +113,9 @@ body{
         height: 80%;
     }
 }
+#msg{
+    padding: 0.7em;
+    border: 1px solid ;
+    border-radius: 0.4em;
+    background: linear-gradient(#141e30, #243b55);
+}
